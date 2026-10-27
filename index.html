@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Secure Code Agent</title><link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header><div><span class="logo">◆</span> SECURE CODE AGENT <small>LOCAL SECURITY REVIEW</small></div><span class="tag">FASTAPI · POSTGRESQL · OLLAMA</span></header>
+<main><section class="hero"><h1>Analyze source code.<br><em>Find potential risks.</em></h1><p>Upload a source file or paste code to run conservative security checks and an optional local AI review. Findings and suggested fixes require human validation.</p></section>
+<div class="layout"><section class="panel"><div class="bar"><h2>New scan</h2><span>Max 150 KB</span></div><label for="filename">Filename (include extension)</label><input id="filename" value="sample.py" placeholder="app.py"><label for="source">Source code</label><textarea id="source" spellcheck="false" placeholder="Paste Python, JavaScript, TypeScript, SQL, Shell, Java or Go source here..."></textarea><div class="actions"><label class="upload">Choose file <input id="file" type="file" accept=".py,.js,.ts,.jsx,.tsx,.sql,.sh,.java,.go" hidden></label><button id="scan">Analyze code</button></div><div id="status" role="status"></div></section><section class="panel results"><div class="bar"><h2>Security report</h2><span id="scanid">No scan selected</span></div><div id="result"><div class="empty">Run a scan to view security findings, AI suggestions, and recommended fixes.</div></div></section></div>
+<section class="panel history"><div class="bar"><h2>Scan history</h2><button class="outline" id="refresh">Refresh</button></div><div id="history">Loading…</div></section>
+<footer>For local development. Do not upload secrets or proprietary code without authorization. AI fixes are suggestions, never automatically applied.</footer></main><script src="/static/app.js"></script></body></html>
