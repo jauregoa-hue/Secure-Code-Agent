@@ -95,6 +95,3 @@ The default credentials in `docker-compose.yml` are for **local development only
 - Authentication, multi-user data separation, encryption and migrations
 - Background task queue and code diff viewer
 - SARIF export and secure approval workflow for suggested fixes
-
-## License
-MIT. See LICENSE.
