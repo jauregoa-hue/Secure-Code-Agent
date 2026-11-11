@@ -1,4 +1,4 @@
-# Secure Code Agent
+# Secure Code Agent (Still in progress but this is what I have so far)
 
 Local-first source-code security review dashboard built with **Python FastAPI**, **PostgreSQL**, **Ollama**, HTML, CSS and JavaScript.
 
